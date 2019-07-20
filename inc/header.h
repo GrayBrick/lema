@@ -6,13 +6,14 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 14:07:38 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/18 18:12:28 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/20 20:24:29 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HEADER_H
 # define HEADER_H
 # include "../libft/libft.h"
+# include <stdio.h>
 
 typedef struct		s_gen
 {
@@ -46,6 +47,12 @@ typedef struct		s_ant
 	int				*iway;
 }					t_ant;
 
+typedef	struct		s_a
+{
+	int				now;
+	int				be;
+}					t_a;
+
 int					iinarr(int *arr, int a);
 t_cell				*delstruct(t_cell *cell, int f);
 
@@ -76,6 +83,7 @@ t_cell				*getr(t_cell *cells);
 char				*cpytmp(char **str);
 void				printant(int x, char *name);
 int					isvalidstr(char *str);
+void				start(t_cell *cells);
 
 void				alga(t_cell *cells);
 int					setcell(char *str, t_cell *cells);

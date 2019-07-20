@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 18:48:41 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/08 18:52:36 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/20 18:26:54 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ void	dij(t_cell *cells, int m)
 	{
 		if (cells[cells[m].near[x]].p)
 			continue;
+		if (iinarr(cells[cells[m].near[x]].block, m))
+			continue ;
 		if (cells[cells[m].near[x]].len == -1 ||
 				cells[cells[m].near[x]].len > cells[m].len + cells[m].wei)
 			cells[cells[m].near[x]].len = cells[m].len + cells[m].wei;

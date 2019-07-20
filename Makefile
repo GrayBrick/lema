@@ -6,7 +6,7 @@
 #    By: kmurch <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/12 14:09:46 by kmurch            #+#    #+#              #
-#    Updated: 2019/07/18 18:12:01 by kmurch           ###   ########.fr        #
+#    Updated: 2019/07/20 16:40:31 by kmurch           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRC		= lemin.c\
 		  alg0.c\
 		  alg1.c\
 		  struct.c\
+		  nalg0.c\
 
 OBJ		= $(addprefix $(OBJDIR),$(SRC:.c=.o))
 
