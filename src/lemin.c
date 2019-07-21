@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/07 16:39:58 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/20 17:09:33 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/21 14:22:35 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,7 @@ int	main(void)
 	cells[g_gen.e].isant = -1;
 	cells[g_gen.s].isant = -1;
 	ft_putchar('\n');
-	start(cells);
-	//alga(cells);
+	alga(cells);
 	delstruct(cells, 2);
 	exit(1);
 }
