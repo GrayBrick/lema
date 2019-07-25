@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/07 16:39:58 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/21 14:22:35 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/25 17:17:14 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	main(void)
 	g_gen.mem = 2;
 	g_gen.s = -1;
 	g_gen.e = -1;
+	g_gen.hear = 0;
 	cells = NULL;
 	if (!(cells = getstr(cells)))
 	{

@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 14:07:38 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/21 14:22:06 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/25 17:16:40 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct		s_gen
 	int				mem;
 	int				minway;
 	int				x;
+	int				hear;
 }					t_gen;
 
 t_gen				g_gen;
@@ -82,6 +83,7 @@ t_cell				*getr(t_cell *cells);
 char				*cpytmp(char **str);
 void				printant(int x, char *name);
 int					isvalidstr(char *str);
+t_cell				*clearww(char *str, t_cell *cells);
 
 void				alga(t_cell *cells);
 int					setcell(char *str, t_cell *cells);

@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/13 19:49:07 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/17 20:38:05 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/25 17:52:18 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,11 +72,11 @@ t_cell		*getstr(t_cell *cells)
 	while (get_next_line(0, &str) > 0 && ((str = cpytmp(&str)) || 1))
 	{
 		if (x == 0 && ft_strequ(str, ""))
-			return ((cells = 0));
+			return (clearww(str, cells));
 		if (!x++)
 		{
 			cells = (t_cell *)malloc(sizeof(t_cell) * 2);
-			setcell("l1 0 0", cells);
+			setcell("L1 0 0", cells);
 			g_gen.sum = 0;
 		}
 		if (!(cells = rem7(cells, &f, &s, str)))

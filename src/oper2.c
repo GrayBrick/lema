@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 18:37:25 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/13 17:36:13 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/25 17:06:51 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,10 @@ int		isant(char *str, int i)
 	if (i == 1)
 		return (ft_atoi(str));
 	return (1);
+}
+
+t_cell	*clearww(char *str, t_cell *cells)
+{
+	free(str);
+	return ((cells = 0));
 }

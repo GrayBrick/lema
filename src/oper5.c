@@ -6,7 +6,7 @@
 /*   By: kmurch <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/08 19:05:16 by kmurch            #+#    #+#             */
-/*   Updated: 2019/07/16 18:14:33 by kmurch           ###   ########.fr       */
+/*   Updated: 2019/07/25 17:18:38 by kmurch           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ t_cell	*rem4(t_cell *cells, int *s, char *str)
 			return (delstruct(cells, 0));
 		}
 		x = -1;
-		while (++x <= g_gen.sum)
+		while (++x <= g_gen.sum && ((g_gen.hear = 1) || 1))
 		{
 			cells[x].near = (int *)malloc(sizeof(int) * g_gen.sum);
 			cells[x].near[0] = 0;
